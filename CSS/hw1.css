@@ -1,0 +1,137 @@
+body{
+    margin:0px;
+}
+
+header{
+        background-image: url("../images/flywheel.jpg");
+        background-color: #707070; 
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 2%;
+        border-bottom: solid black 3px;
+         
+        position: fixed;
+        z-index: 3;
+        top:0;
+        width: 100%;
+}
+
+h1{
+    color:#FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 170%;
+}
+
+nav>a{
+    display: inline-block;
+    color:#000000;
+    background-color: rgba(255, 255, 255, 0.24);
+    text-align: center;
+    text-decoration: none;
+    font-size: 150%;
+    border-radius: 5px;
+
+    width: 12%;
+    padding: 0.5%;
+    margin: auto 5.5%;
+}
+
+nav>a:hover:not(.active) , nav>a:focus{
+    transition-property:width,background-color,color,text-decoration;
+    transition-duration:0.5s,0.5s,0.5s,0.5s;
+
+    color: rgb(255, 255, 255);
+    background-color: #566922;
+    width: 14%;
+    text-decoration: underline;
+}   
+
+.active{
+    background-color: rgb(255, 255, 255);
+}
+
+main {
+    margin-top: 10%;
+  }
+
+.right{
+    display: block;
+    float: left;
+    padding-top: 1%;
+    padding-left: 1%;
+    width: 70%;
+}
+
+.left{
+    float: left;
+    display: block;
+    height: 100vh;
+    background-color: rgb(86, 105, 34);
+}
+
+.left img{
+    margin: 15% 30px;
+    width: 200px;
+    display: block;
+    border: solid 2px #000000;
+}
+
+
+.left img:hover{
+    transition-property:width;
+    transition-duration:1s;
+    width: 230px;
+}
+
+/* Table Edditing HW3*/
+
+ .right table{
+    width: 90%;
+    border-spacing: 1%;
+    margin: 0 auto;
+
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90%;
+    line-height: 3%;
+}
+
+.right table th{
+    border-radius:7px 7px 0 0;
+    padding: 2%;
+    border-top: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    border-bottom: 3px solid #b1e053;
+
+    color: #ffffff;
+    background:linear-gradient(rgba(86,105,34,1), rgba(146,168,87,1));
+    /* browser prefixes */
+    -webkit-background:linear-gradient(rgba(86,105,34,1), rgba(146,168,87,1));
+    -moz-background:linear-gradient(rgba(86,105,34,1), rgba(146,168,87,1));
+    -o-background:linear-gradient(rgba(86,105,34,1), rgba(146,168,87,1));
+    
+} 
+.right table td{
+    border-radius:2px;
+    padding: 2%;
+    border: 1px solid #FFFFFF;
+    color: #6d6d6d;
+    background: #e4f5d4;
+
+    text-shadow: 0.2px 0.2px #000000;
+}
+
+.right table tr{
+    opacity: .8;
+    text-align: center;
+}
+
+.right table tr:hover{
+    opacity: 1;
+}
+
+.right table tr th:first-child, .right table tr td:first-child{
+    text-align: left;
+}
